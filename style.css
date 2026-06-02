@@ -324,11 +324,29 @@ tbody tr:hover{
 }
 
 /* =========================
+   RESPONSIVE IMAGES
+========================= */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+table img{
+    width:100%;
+    height:auto;
+    max-width:200px;
+    margin:0;
+}
+
+/* =========================
    VIDEO
 ========================= */
 
 video{
     width:100%;
+
     border-radius:20px;
     margin-top:20px;
 
