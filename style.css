@@ -387,4 +387,16 @@ footer{
         display:block;
         overflow-x:auto;
     }
+
+    /* Mobile tweaks for car description cards */
+    .car-description{
+        padding:12px 14px;
+        margin:10px 0 12px;
+    }
+
+    .car-description::before{
+        font-size:1.6rem;
+        margin-bottom:4px;
+    }
 }
+
