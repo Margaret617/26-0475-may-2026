@@ -1,0 +1,390 @@
+/* ====================================
+   MOTORÉ - PREMIUM SHOWROOM STYLES
+==================================== */
+
+:root{
+    --bg:#05070a;
+    --panel:rgba(255,255,255,.08);
+    --panel-hover:rgba(255,255,255,.12);
+    --text:#ffffff;
+    --muted:rgba(255,255,255,.75);
+    --brand:#d9a441;
+    --brand-2:#5fd1c8;
+    --border:rgba(255,255,255,.15);
+    --shadow:0 15px 40px rgba(0,0,0,.45);
+    --radius:18px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+    line-height:1.7;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(217,164,65,.2),
+    transparent 40%),
+
+    radial-gradient(circle at top right,
+    rgba(95,209,200,.15),
+    transparent 40%),
+
+    linear-gradient(
+    180deg,
+    #030405,
+    #0b0f14
+    );
+
+    min-height:100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    position:relative;
+}
+
+header::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.65)
+    ),
+    url("images/showroom.jpg");
+
+    background-size:cover;
+    background-position:center;
+    z-index:-1;
+}
+
+h1{
+    font-size:4rem;
+    font-weight:800;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:white;
+    text-shadow:0 0 25px rgba(217,164,65,.6);
+}
+
+header p{
+    color:var(--muted);
+    font-size:1.1rem;
+    margin-top:15px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+    margin-top:25px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(10px);
+
+    transition:.4s;
+}
+
+nav a:hover{
+    transform:translateY(-4px);
+
+    background:rgba(95,209,200,.12);
+
+    border-color:var(--brand-2);
+
+    box-shadow:0 10px 25px rgba(95,209,200,.2);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+section{
+    margin:30px 0;
+    padding:30px;
+
+    border-radius:var(--radius);
+
+    background:var(--panel);
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+    animation:fadeUp .8s ease;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    background:var(--panel-hover);
+}
+
+h2{
+    margin-bottom:15px;
+    font-size:2rem;
+    position:relative;
+}
+
+h2::after{
+    content:"";
+    display:block;
+
+    width:90px;
+    height:4px;
+
+    margin-top:10px;
+
+    background:
+    linear-gradient(
+    90deg,
+    var(--brand),
+    var(--brand-2)
+    );
+
+    border-radius:50px;
+}
+
+h3{
+    margin-bottom:15px;
+}
+
+p{
+    color:var(--muted);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+thead{
+    background:rgba(255,255,255,.1);
+}
+
+thead th{
+    padding:16px;
+    text-align:left;
+}
+
+tbody td{
+    padding:16px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:rgba(255,255,255,.05);
+}
+
+/* =========================
+   CAR GALLERY
+========================= */
+
+.car-gallery{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+    margin-top:30px;
+}
+
+.car-card{
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:1px solid var(--border);
+
+    transition:.4s;
+}
+
+.car-card:hover{
+    transform:
+    translateY(-10px)
+    scale(1.02);
+}
+
+.car-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.car-card:hover img{
+    transform:scale(1.1);
+}
+
+.car-card-content{
+    padding:20px;
+}
+
+.car-card h3{
+    margin-bottom:10px;
+}
+
+.car-card p{
+    font-size:.95rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn{
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:14px 30px;
+
+    background:
+    linear-gradient(
+    45deg,
+    var(--brand),
+    #f7c76c
+    );
+
+    color:black;
+
+    font-weight:700;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 10px 30px
+    rgba(217,164,65,.4);
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+video{
+    width:100%;
+    border-radius:20px;
+    margin-top:20px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:40px 20px;
+    color:var(--muted);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+    }
+}

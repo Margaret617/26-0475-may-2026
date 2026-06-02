@@ -4,19 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motoré</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Welcome to Motoré</h1>
+    <header>
+        <h1>Welcome to Motoré</h1>
 
-    <h2>Your Home for Timeless Vintage Cars</h2>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#getting-started">Getting started</a></li>
+                <li><a href="#featured-cars">Featured cars</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
 
-    <hr>
+        <h2 id="about">Your Home for Timeless Vintage Cars</h2>
+        <hr>
+    </header>
 
     <p>
-        Motoré is a curated marketplace for rare and iconic vintage cars. 
-        It brings together collectors, enthusiasts, and trusted sellers in one space 
+        Motoré is a curated marketplace for rare and iconic vintage cars.
+        It brings together collectors, enthusiasts, and trusted sellers in one space
         to showcase, discover, and trade timeless automotive masterpieces.
     </p>
+
+    <section id="how-it-works">
+        <h3>How it works</h3>
+        <ul>
+            <li>Browse featured vintage cars.</li>
+            <li>Learn the history and condition details.</li>
+            <li>Contact trusted sellers.</li>
+        </ul>
+    </section>
+
+    <section id="getting-started">
+        <h3>Getting started</h3>
+        <ol>
+            <li>Choose a car you love.</li>
+            <li>Review photos and specifications.</li>
+            <li>Arrange pickup or shipping.</li>
+        </ol>
+    </section>
+
+    <section id="featured-cars">
+        <h3>Featured cars</h3>
+
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Car</th>
+                    <th>Description</th>
+                    <th>Photo</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ford Mustang</td>
+                    <td>Classic styling with timeless presence.</td>
+                    <td>
+                        <img
+                            src="https://i.pinimg.com/736x/61/19/cb/6119cb11fa32f803a4e7d91541e62148.jpg"
+                            alt="Vintage car in sunlight"
+                            width="200"
+                        />
+                    </td>
+                    <td><a href="#car-1">View details</a></td>
+                </tr>
+                <tr>
+                    <td>Lamborghini Revuelto</td>
+                    <td>Great event-ready condition and character.</td>
+                    <td>
+                        <img
+                            src="https://dealerimages.dealereprocess.com/image/upload/v1695835019/LB744_EXTERIORS_2_.jpg_tr0hky.webp"
+                            alt="Classic car at an event"
+                            width="200"
+                        />
+                    </td>
+                    <td><a href="#car-2">View details</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="car-1">Ford Mustang</h4>
+        <p class="car-description">
+            The Ford Mustang is a legendary American sports car that blends timeless styling with modern performance. Available with powerful engine options, including the iconic 5.0-liter V8, the Mustang offers thrilling acceleration, responsive handling, and an unmistakable exhaust note. Its bold design, driver-focused interior, and rich heritage dating back to 1964 have made it one of the most recognizable performance cars in the world, appealing to enthusiasts who value both everyday practicality and exhilarating driving experiences.
+        </p>
+
+        <img
+            src="https://i.pinimg.com/736x/61/19/cb/6119cb11fa32f803a4e7d91541e62148.jpg"
+            alt="Vintage car in sunlight"
+            width="450"
+        />
+
+        <h4 id="car-2">Lamborghini Revuelto</h4>
+        <p class="car-description">
+            The Lamborghini Revuelto is Lamborghini's flagship supercar, combining breathtaking performance with cutting-edge hybrid technology. Powered by a naturally aspirated 6.5-liter V12 engine and three electric motors, it delivers an incredible 1,001 horsepower, accelerating from 0 to 100 km/h in just 2.5 seconds. Its aggressive aerodynamic design, iconic scissor doors, luxurious cockpit, and advanced driving systems make it a masterpiece of Italian engineering, built for drivers who demand exclusivity, prestige, and unmatched performance.
+        </p>
+
+        <img
+            src="https://dealerimages.dealereprocess.com/image/upload/v1695835019/LB744_EXTERIORS_2_.jpg_tr0hky.webp"
+            alt="Classic car at an event"
+            width="450"
+        />
+    </section>
+
+    <section id="video">
+        <h3>Watch: Vintage Car Spotlight</h3>
+        <video controls width="600">
+            <source src="WhatsApp Video 2026-06-02 at 9.06.01 AM.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
 </body>
 </html>
+
