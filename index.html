@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motoré</title>
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Motor&eacute;</h1>
+    <h1>Motoré</h1>
     <p>Your Home for Timeless Vintage & Performance Cars</p>
 
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#cars">Cars</a></li>
+            <li><a href="#table">Price List</a></li>
             <li><a href="#video">Video</a></li>
         </ul>
     </nav>
@@ -35,40 +31,55 @@
     <!-- ABOUT -->
     <section id="about">
         <h2>About Motoré</h2>
+
         <p>
             Motoré is a curated marketplace where automotive legends live forever.
             We connect collectors and enthusiasts with timeless machines that define eras.
         </p>
+
+        <h3>Buying Process</h3>
+        <ol>
+            <li>Browse available cars</li>
+            <li>Select your preferred vehicle</li>
+            <li>Contact Motoré</li>
+            <li>Complete the purchase process</li>
+        </ol>
     </section>
 
     <!-- CARS -->
     <section id="cars">
         <h2>Featured Cars</h2>
 
+        <h3>Vehicle Categories</h3>
+        <ul>
+            <li>Muscle Cars</li>
+            <li>Supercars</li>
+            <li>Classic Cars</li>
+        </ul>
+
         <div class="car-gallery">
 
-            <!-- CAR 1 -->
+            <!-- LAMBORGHINI AVENTADOR (UPDATED) -->
             <div class="car-card">
-                <img src="https://i.pinimg.com/236x/5f/4f/64/5f4f64b83e5cf197d6a9b65c70b52f6b.jpg" alt="Ford Mustang">
+                <img src="data:image/jpeg;base64,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"
+                alt="Lamborghini Aventador">
 
                 <div class="car-card-content">
-                    <h3>Ford Mustang</h3>
+                    <h3>Lamborghini Aventador</h3>
                     <p>
-                        A legendary American muscle car known for its aggressive styling,
-                        roaring V8 engines, and timeless road presence. Built for power and nostalgia.
+                        A raging V12 Italian supercar built for extreme speed, drama, and pure driving emotion.
                     </p>
                 </div>
             </div>
 
-            <!-- CAR 2 -->
+            <!-- SECOND CAR -->
             <div class="car-card">
                 <img src="https://dealerimages.dealereprocess.com/image/upload/v1695835019/LB744_EXTERIORS_2_.jpg_tr0hky.webp" alt="Lamborghini Revuelto">
 
                 <div class="car-card-content">
                     <h3>Lamborghini Revuelto</h3>
                     <p>
-                        A futuristic hybrid V12 supercar delivering extreme performance,
-                        cutting-edge aerodynamics, and Italian engineering excellence.
+                        A futuristic hybrid V12 supercar with extreme performance and Italian precision.
                     </p>
                 </div>
             </div>
@@ -76,7 +87,31 @@
         </div>
     </section>
 
-    <!-- VIDEO -->
+    <!-- TABLE -->
+    <section id="table">
+        <h2>Car Price List</h2>
+
+        <table>
+            <tr>
+                <th>Car</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Lamborghini Aventador</td>
+                <td>Supercar</td>
+                <td>$500,000+</td>
+            </tr>
+
+            <tr>
+                <td>Lamborghini Revuelto</td>
+                <td>Supercar</td>
+                <td>$600,000</td>
+            </tr>
+        </table>
+    </section>
+
     <section id="video">
         <h2>Showroom Spotlight</h2>
 
